@@ -14,6 +14,7 @@ int main() {
     int n;
     int arr1[101];
     cin >> n;
+
     for(int i = 0; i < n; i++) {
         cin >> arr1[i];
     }
