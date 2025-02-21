@@ -19,7 +19,9 @@
 | Category | Title | Link |
 | :------: | :---: | :--: |
 | 구현 |  <a href="https://www.acmicpc.net/problem/3036">링</a> | <a href="">🔗</a> |
+| 구현 |  <a href="https://www.acmicpc.net/problem/2753">윤년</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/1009">분산 처리</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/2581">소수</a> | <a href="">🔗</a> |
 <br>
 
 ```
@@ -36,5 +38,7 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | Category | Title | Link |
 | :------: | :---: | :--: |
 | 구현 |  <a href="https://www.acmicpc.net/problem/3036">링</a> | <a href="">🔗</a> |
+| 구현 |  <a href="https://www.acmicpc.net/problem/2753">윤년</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/1009">분산 처리</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/2581">소수</a> | <a href="">🔗</a> |
 <br>
