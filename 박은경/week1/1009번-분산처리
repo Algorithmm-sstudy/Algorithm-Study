@@ -12,13 +12,16 @@ int main() {
 		
 		cin >> a >> b;
 
-		
-
 		for (int i = 0; i < b; i++) {
 			com_num = (com_num * a) % 10;
 		}
 
-		cout <<com_num << endl;
+		if (com_num == 0) {
+			cout << 10 << endl;
+		}
+		else {
+			cout << com_num << endl;
+		}
 	}
 
 	return 0;
