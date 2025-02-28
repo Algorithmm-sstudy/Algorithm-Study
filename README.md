@@ -42,3 +42,9 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 수학 |  <a href="https://www.acmicpc.net/problem/1009">분산 처리</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/2581">소수</a> | <a href="">🔗</a> |
 <br>
+
+도전 문제(**필수 아님**)
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 수학 |  <a href="https://www.acmicpc.net/problem/21919">소수 최소 공배수</a> | <a href="https://www.acmicpc.net/problem/21919">🔗</a> |
+<br>
