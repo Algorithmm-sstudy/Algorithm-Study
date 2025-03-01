@@ -48,3 +48,12 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | :------: | :---: | :--: |
 | 수학 |  <a href="https://www.acmicpc.net/problem/21919">소수 최소 공배수</a> | <a href="https://www.acmicpc.net/problem/21919">🔗</a> |
 <br>
+
+### Week 02 (25.03.03 ~ 25.03.09)
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 구현 |  <a href="https://www.acmicpc.net/problem/5597">과제 안 내신 분...?</a> | <a href="">🔗</a> |
+| 그리디 |  <a href="https://www.acmicpc.net/problem/4796">캠핑</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/5618">공약수</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/2839">설탕배달</a> | <a href="">🔗</a> |
+<br>
