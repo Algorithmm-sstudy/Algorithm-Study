@@ -48,6 +48,7 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | :------: | :---: | :--: |
 | 수학 |  <a href="https://www.acmicpc.net/problem/21919">소수 최소 공배수</a> | <a href="https://www.acmicpc.net/problem/21919">🔗</a> |
 <br>
+
 ### Week 02 (25.03.03 ~ 25.03.09)
 
 | Category | Title | Link |
