@@ -7,7 +7,7 @@ int div(int n) {
 
 		return c + (n / 3);
 	}
-	else if (n == 1 || n == 2 || n == 4 || n == 5 || n == 7 ) {
+	else if (n == 1 || n == 2 || n == 4 || n == 7 ) {
 		return -1;
 	}
 	c++;
