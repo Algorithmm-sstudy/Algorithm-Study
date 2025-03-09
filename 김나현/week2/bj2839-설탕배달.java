@@ -7,7 +7,7 @@ public class bj2839_설탕배달 {
         if(n==3 || n==6 || n==9 || n==12) {
             return c + (n/3);
         }
-        else if(n==1 || n==2 || n==4 || n==5 || n==7){
+        else if(n==1 || n==2 || n==4 || n==7){
             return -1;
         }
         c++;
