@@ -20,10 +20,6 @@ int main() {
 
 
 	sugar_bag5 = N / 5;
-	
-	if (N % 5 != 0) {
-
-	}
 
 	cout << sugar_bag5 + sugar_bag3 << endl;
 
