@@ -64,3 +64,13 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | :------: | :---: | :--: |
 | 수학 |  <a href="https://www.acmicpc.net/problem/1448">삼각형 만들기</a> | <a href="https://www.acmicpc.net/problem/1448">🔗</a> |
 <br>
+
+### Week 03 (25.03.10 ~ 25.03.16)
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 구현 |  <a href="https://www.acmicpc.net/problem/14467">소가 길을 건너간 이유 1</a> | <a href="">🔗</a> |
+| 자료구조 |  <a href="https://www.acmicpc.net/problem/10828">스택</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/10818">최소, 최대</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/22864">피로도</a> | <a href="">🔗</a> |
+<br>
