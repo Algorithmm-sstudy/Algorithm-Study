@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int c = 0;
+int div(int n) {
+	if (n == 3 || n == 6 || n == 9 || n == 12) {
+
+		return c + (n / 3);
+	}
+	else if (n == 1 || n == 2 || n == 4 || n == 5 || n == 7 ) {
+		return -1;
+	}
+	c++;
+	return div(n-5);
+}
+
+
+int main() {
+	int n;
+	cin >> n;
+	if (n % 5 == 0) {
+		cout << n / 5;
+	}
+	else {
+		cout << div(n);
+	}
+}
