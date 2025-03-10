@@ -50,10 +50,27 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 <br>
 
 ### Week 02 (25.03.03 ~ 25.03.09)
+
 | Category | Title | Link |
 | :------: | :---: | :--: |
 | 구현 |  <a href="https://www.acmicpc.net/problem/5597">과제 안 내신 분...?</a> | <a href="">🔗</a> |
 | 그리디 |  <a href="https://www.acmicpc.net/problem/4796">캠핑</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/5618">공약수</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/2839">설탕배달</a> | <a href="">🔗</a> |
+<br>
+
+도전 문제(**필수 아님**)
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 수학 |  <a href="https://www.acmicpc.net/problem/1448">삼각형 만들기</a> | <a href="https://www.acmicpc.net/problem/1448">🔗</a> |
+<br>
+
+### Week 03 (25.03.10 ~ 25.03.16)
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 구현 |  <a href="https://www.acmicpc.net/problem/14467">소가 길을 건너간 이유 1</a> | <a href="">🔗</a> |
+| 자료구조 |  <a href="https://www.acmicpc.net/problem/10828">스택</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/10818">최소, 최대</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/22864">피로도</a> | <a href="">🔗</a> |
 <br>
