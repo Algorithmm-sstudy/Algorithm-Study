@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	int a[10];
+    for(int i=0;i<10;i++){ // 은경어 고맙다,,,
+a[i]=2;
+}
+	int n;
+	int x, z;
+	int temp{ 0 };
+	cin >> n;
+	while (n--) {
+		cin >> x >> z;
+		if (a[x-1] == 2) {
+			a[x-1] = z;
+		}
+		else if (a[x - 1] == z) {
+			continue; //이 부분을 안해서 틀렸음
+		} //나봉씨 감사합니다!!
+		else if (a[x-1] !=z) {
+			a[x-1] = z;
+			temp++;
+		}
+	} //다들 많이 배워갑니다,,
+	cout << temp << endl;
+}
