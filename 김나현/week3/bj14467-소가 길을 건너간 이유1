@@ -6,8 +6,8 @@ int main() {
 	int n;
 	cin >> n;
 
-	int arr[99];
-	for (int i = 0; i < 98; i++) {
+	int arr[10];
+	for (int i = 0; i < 10; i++) {
 		arr[i] = -1;
 	}
 
@@ -18,17 +18,11 @@ int main() {
 		if (arr[cow - 1] == -1) {
 			arr[cow - 1] = dir;
 		}
-		else if (arr[cow - 1] == dir) {
-			continue;
-		}
-		else if (arr[cow - 1] == 1 && dir == 0) {
+		else if (arr[cow - 1] != dir) {
 			arr[cow - 1] = dir;
 			count++;
 		}
-		else if (arr[cow - 1] == 0 && dir == 1) {
-			arr[cow - 1] = dir;
-			count++;
-		}
+
 	}
 	cout << count;
 }
