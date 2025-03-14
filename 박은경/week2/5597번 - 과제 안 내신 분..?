@@ -3,7 +3,7 @@ using namespace std;
 
 int nums[31] = {0};
 
-int main() {
+int main() { 
 	int n = 1;
 	int min_num = -1, other_num = 0;
 	
