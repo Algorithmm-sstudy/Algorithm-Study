@@ -1,0 +1,98 @@
+#include <iostream>
+using namespace std;
+
+struct node {
+	int data;
+	node* next;
+};
+
+class listStack {
+public:
+	listStack();
+	void push(int data);
+	void pop();
+	int size();
+	bool empty();
+	int top();
+
+private:
+	node* topNode;
+	int listSize;
+};
+
+listStack::listStack() {
+	topNode = NULL;
+	listSize = 0;
+}
+
+void listStack::push(int data) {
+	node* newNode = new node();
+	newNode->data = data;
+	newNode->next = topNode;
+	topNode = newNode;
+	listSize++;
+}
+
+void listStack::pop() {
+	if (listSize == 0) {
+		cout << -1;
+		return;
+	}
+	else {
+		cout << topNode->data;
+		node* curNode = topNode;
+		topNode = topNode->next;
+		delete curNode;
+		listSize--;
+	}
+}
+
+int listStack::size() {
+	return listSize;
+}
+
+bool listStack::empty() {
+	if (listSize==0) {
+		return true;
+	}
+	else return false;
+}
+
+int listStack::top() {
+	if (empty()) return -1;
+	else {
+		return topNode->data;
+	}
+}
+
+int main() {
+	listStack ls;
+	int n;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		string str;
+		cin >> str;
+		if (str == "push") {
+			int a;
+			cin >> a;
+			ls.push(a);
+		}
+		else if (str == "pop") {
+			ls.pop();
+			cout << '\n';
+		}
+		else if (str == "size") {
+			cout << ls.size() << '\n';
+		}
+		else if (str == "empty") {
+			if (ls.empty()) {
+				cout << 1;
+			}
+			else cout << 0;
+			cout << '\n';
+		}
+		else if (str == "top") {
+			cout << ls.top() << '\n';
+		}
+	}
+}
