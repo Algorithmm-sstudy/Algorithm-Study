@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
-
 int main() {
 	int N; //관찰 횟수
 	int cnt = 0;
