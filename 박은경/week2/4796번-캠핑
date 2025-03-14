@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+ 
 int main() {
 	int L, P; //연속하는 P일 중 L일 동안 사용 가능.
 	int V; //휴가 기간
