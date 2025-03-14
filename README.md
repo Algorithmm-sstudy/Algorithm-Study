@@ -74,3 +74,4 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 수학 |  <a href="https://www.acmicpc.net/problem/10818">최소, 최대</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/22864">피로도</a> | <a href="">🔗</a> |
 <br>
+
