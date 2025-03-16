@@ -6,7 +6,7 @@ int rad[100] = {};
 
 
 //두 수의 최대공약수를 구하는 함수
-int FindGCD(int num1, int num2) {
+int FindGCD(int num1, int num2) { 
 	int g = 0;
 	for (int i = 1; i <= min(num1, num2); i++) {
 		if (num1 % i == 0 && num2 % i == 0) {

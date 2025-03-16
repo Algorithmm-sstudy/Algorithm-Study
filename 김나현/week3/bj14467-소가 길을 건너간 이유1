@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int n;
+	cin >> n;
+
+	int arr[10];
+	for (int i = 0; i < 10; i++) {
+		arr[i] = -1;
+	}
+
+	int cow, dir;
+	int count = 0;
+	for (int j = 0; j < n; j++) {
+		cin >> cow >> dir;
+		if (arr[cow - 1] == -1) {
+			arr[cow - 1] = dir;
+		}
+		else if (arr[cow - 1] != dir) {
+			arr[cow - 1] = dir;
+			count++;
+		}
+
+	}
+	cout << count;
+}
+

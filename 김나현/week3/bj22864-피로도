@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a, b, c, m;
+	int cur_state = 0, cur_work = 0;
+
+	cin >> a >> b >> c >> m;
+
+	if (a > m) {
+		cout << 0;
+		return 0;
+	}
+	for (int i = 0; i < 24; i++) {
+		if (cur_state + a <= m) {
+			cur_work += b;
+			cur_state += a;
+		}
+		else {
+			cur_state -= c;
+			if (cur_state < 0) cur_state = 0;
+		}
+	}
+
+	cout << cur_work;
+}

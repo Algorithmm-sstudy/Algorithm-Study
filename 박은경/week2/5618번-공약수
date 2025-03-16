@@ -1,7 +1,7 @@
 #include <iostream>
 #define MAX_N 100000000 
 using namespace std;
-
+ 
 int arr[3] = {}; //n개의 자연수를 저장할 배열
 int min_arr[100] = {};
 

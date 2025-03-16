@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
- 
 int main() {
 	int N;
 	int sugar_bag5 = 0;
