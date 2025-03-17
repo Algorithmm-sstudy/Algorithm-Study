@@ -2,7 +2,7 @@
 using namespace std; 
 
 //num이 소수인지 확인하는 변수
-bool IsPrime(int num) {
+bool IsPrime(int num) { 
 	if (num == 1) {
 		return false;
 	}
