@@ -85,7 +85,7 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 수학 |  <a href="https://www.acmicpc.net/problem/11931">수 정렬하기 4</a> | <a href="">🔗</a> |
 <br>
 
-GDGoC 알고리즘 문제(**필수 아님**)
+### GDGoC 알고리즘 문제(**필수 아님**)
 | Category | Title | Link |
 | :------: | :---: | :--: |
 | 자료구조 |  <a href="https://www.acmicpc.net/problem/2346">풍선 터뜨리기</a> | <a href="https://www.acmicpc.net/problem/2346">🔗</a> |
