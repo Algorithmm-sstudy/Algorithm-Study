@@ -3,7 +3,7 @@
 using namespace std;
 
 int lamps[MAX_N] = {};
-
+ 
 //전구 상태를 이전과 반대가 되게 변경하는 함수
 void Change(int num) {
 	if (lamps[num] == 1) {
