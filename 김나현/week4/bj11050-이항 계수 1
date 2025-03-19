@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int factorial(int n) {
+	int ans = 1;
+	for (int i = n; i > 0; i--) {
+		ans *= i;
+	}
+	return ans;
+}
+
+int denominator(int n, int k) {
+	int a = 1, b = 1;
+	for (int i = n - k; i > 0; i--) {
+		a *= i;
+	}
+	b = factorial(k);
+	return a * b;
+}
+
+int main() {
+	int n, k;
+	cin >> n >> k;
+	cout << factorial(n) / denominator(n, k);
+}
