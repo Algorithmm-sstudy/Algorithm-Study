@@ -80,7 +80,7 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | Category | Title | Link |
 | :------: | :---: | :--: |
 | 구현 |  <a href="https://www.acmicpc.net/problem/21918">전구</a> | <a href="">🔗</a> |
-| 자료구조 |  <a href="https://www.acmicpc.net/group/workbook/view/20590/77647">큐</a> | <a href="">🔗</a> |
+| 자료구조 |  <a href="https://www.acmicpc.net/problem/10845">큐</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/11050">이항 계수 1</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/11931">수 정렬하기 4</a> | <a href="">🔗</a> |
 <br>
