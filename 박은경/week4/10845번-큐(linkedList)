@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+ 
 //큐는 선입선출
 struct node{
 	int data;
