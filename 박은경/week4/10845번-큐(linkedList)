@@ -1,0 +1,113 @@
+#include <iostream>
+using namespace std;
+
+//큐는 선입선출
+struct node{
+	int data;
+	node* next;
+};
+
+class listQueue {
+public:
+	listQueue() { //기본 생성자
+		frontNode = NULL;
+		rearNode = NULL;
+		n = 0;
+	}
+	bool empty() { //큐가 비어있는지 확인하는 함수
+		if (n == 0) {
+			return true;
+		}
+		return false;
+	}
+	int size() { //큐의 크기 반환 함수
+		return n;
+	}
+	int front() { //큐의 front에 저장된 원소 반환 함수
+		if (n == 0) {
+			return -1;
+		}
+		return frontNode->data;
+	}
+	int back() { //큐의 rear에 저장된 원소 반환 함수
+		if (n == 0) {
+			return -1;
+		}
+		return rearNode->data;
+	}
+	void push(int data) { //정수 data를 큐에 넣는 함수
+		node* newNode = new node;
+		newNode->data = data;
+		newNode->next = NULL;
+
+		if (empty()) {
+			frontNode = rearNode = newNode;
+		}
+		else {
+			rearNode->next = newNode;
+			rearNode = newNode;
+		}
+		n++;
+	}
+	void pop() { //큐에서 가장 앞에 있는 정수 빼고 출력하는 함수
+		if (empty()) {
+			cout << "-1" << '\n';
+		}
+		else {
+			node* curNode = frontNode;
+			if (size() == 1) {
+				frontNode = rearNode = NULL;
+			}
+			else {
+				frontNode = frontNode->next;
+			}
+			cout << curNode->data << '\n';
+			delete curNode;
+			n--;
+		}
+	}
+
+private:
+	node* frontNode;
+	node* rearNode;
+	int n;
+};
+
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
+	int N;
+	string str;
+	listQueue lq;
+
+	cin >> N;
+
+	while (N--) {
+		cin >> str;
+
+		if (str == "push") {
+			int x;
+			cin >> x;
+
+			lq.push(x);
+		}
+		else if (str == "pop") {
+			lq.pop();
+		}
+		else if (str == "size") {
+			cout << lq.size() << '\n';
+		}
+		else if (str == "empty") {
+			cout << lq.empty() << '\n';
+		}
+		else if (str == "front") {
+			cout << lq.front() << '\n';
+		}
+		else if (str == "back") {
+			cout << lq.back() << '\n';
+		}
+	}
+
+	return 0;
+}
