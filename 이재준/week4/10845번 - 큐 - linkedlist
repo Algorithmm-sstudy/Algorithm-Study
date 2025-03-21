@@ -1,0 +1,101 @@
+#include<iostream>
+using namespace std;
+
+class node{
+public:
+    node* next;
+    int data;
+    node(int x) {
+        next = NULL;
+        data = x;
+    }
+};
+class linkedList {
+private:
+    node* front;
+    node* rear;
+    int size;
+public:
+    linkedList() {
+        front = rear = NULL;
+        size = 0;
+    }
+    bool empty() {
+        return size==0;
+    }
+    int Size() {
+        return size;
+    }
+    void Front() {
+        if(empty()) {
+            cout << -1 << "\n";
+            return;
+        }
+        cout << front->data << "\n";
+    }
+    void Back() {
+        if(empty()) {
+            cout << -1 << "\n";
+            return;
+        }
+        cout << rear->data << "\n";
+    }
+    void push(int x) {
+        node* newNode = new node(x);
+        if(size==0) {
+            front = rear = newNode;
+        }
+        else {
+            rear->next = newNode;
+            rear = newNode;
+        }
+        size++;
+    }
+    void pop() {
+        if(empty()) {
+            cout << -1 << "\n";
+            return;
+        }
+        node* curNode = front;
+        cout << curNode->data << "\n";
+        front = front->next;
+        delete curNode;
+        size--;
+    }
+};
+
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int n; string s;
+    cin >> n;
+    linkedList queue;
+    while(n--) {
+        cin >> s;
+        if(s=="empty") {
+            if(queue.empty()) {
+                cout << "1" << "\n";
+            }
+            else{
+                cout << "0" << "\n";
+            }
+        }
+        else if(s=="size") {
+            cout << queue.Size() << "\n";
+        }
+        else if(s=="front") {
+            queue.Front();
+        }
+        else if(s=="back") {
+            queue.Back();
+        }
+        else if(s=="push") {
+            int x; cin >> x;
+            queue.push(x);
+        }
+        else if(s=="pop") {
+            queue.pop();
+        }
+    }
+}
