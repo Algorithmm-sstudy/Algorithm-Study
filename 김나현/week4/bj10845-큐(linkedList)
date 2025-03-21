@@ -1,0 +1,109 @@
+#include <iostream>
+using namespace std;
+
+struct node {
+	int data;
+	node* next;
+};
+
+class listQueue {
+public:
+	listQueue();
+	void push(int data);
+	void pop();
+	int size();
+	bool empty();
+	int front();
+	int back();
+
+private:
+	node* head;
+	node* tail;
+	int listSize;
+};
+
+listQueue::listQueue() {
+	head = tail = NULL;
+	listSize = 0;
+}
+
+bool listQueue::empty() {
+	if (listSize == 0) return true;
+	else return false;
+}
+
+int listQueue::size() {
+	return listSize;
+}
+
+void listQueue::push(int data) {
+	node* newNode = new node();
+	newNode->data = data;
+	newNode->next = NULL;
+	if (empty()) {
+		head = tail = newNode;
+	}
+	else {
+		tail->next = newNode;
+		tail = newNode;
+	}
+	listSize++;
+}
+
+void listQueue::pop() {
+	if (empty()) {
+		cout << -1;
+		return;
+	}
+	node* curNode = head;
+	cout << curNode->data;
+	if (listSize == 1) {
+		head = tail = NULL;
+	}
+	else {
+		head = head->next;
+	}
+	delete curNode;
+	listSize--;
+}
+
+int listQueue::front() {
+	if (empty()) return -1;
+	else return head->data;
+}
+
+int listQueue::back() {
+	if (empty()) return - 1;
+	else return tail->data;
+}
+
+int main() {
+	listQueue lq;
+	string str;
+	int n, x = 0;
+	cin >> n;
+
+	for (int i = 0; i < n; i++) {
+		cin >> str;
+		if (str == "push") {
+			cin >> x;
+			lq.push(x);
+		}
+		else if (str == "pop") {
+			lq.pop();
+			cout << '\n';
+		}
+		else if (str == "size") {
+			cout << lq.size() << '\n';
+		}
+		else if (str == "empty") {
+			cout << lq.empty() << '\n';
+		}
+		else if (str == "front") {
+			cout << lq.front() << '\n';
+		}
+		else if (str == "back") {
+			cout << lq.back() << '\n';
+		}
+	}
+}
