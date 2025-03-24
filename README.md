@@ -99,5 +99,12 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 구현 |  <a href="https://www.acmicpc.net/problem/2578">빙고</a> | <a href="">🔗</a> |
 | 자료구조 |  <a href="https://www.acmicpc.net/problem/1158">요세푸스 문제</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/14916">거스름돈</a> | <a href="">🔗</a> |
-| 수학 |  <a href="https://www.acmicpc.net/problem/2018">수들의 합 5 4</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/2018">수들의 합 5</a> | <a href="">🔗</a> |
+<br>
+
+### GDGoC 알고리즘 문제(**필수 아님**)
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 큐 |  <a href="https://www.acmicpc.net/problem/2161">카드1</a> | <a href="https://www.acmicpc.net/problem/2161">🔗</a> |
+| 큐 |  <a href="https://www.acmicpc.net/problem/14713">앵무새</a> | <a href="https://www.acmicpc.net/problem/14713">🔗</a> |
 <br>
