@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int addNum(int n) {
+	int count = 0;
+	int ans;
+	for (int i = 1; i <= n; i++) {
+		ans = 0;
+		for (int j = i; j <= n; j++) {
+			ans += j;
+			if (ans == n) {
+				count++;
+				break;
+			}
+			else if (ans > n) {
+				break;
+			}
+		}
+	}
+	return count;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	cout << addNum(n);
+}
