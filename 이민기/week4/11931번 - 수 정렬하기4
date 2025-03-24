@@ -1,0 +1,23 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+bool compare(int a, int b) {
+	return a > b; //내림차순은 > 사용
+}
+
+int main() {
+	cin >> N;
+	int* arr = new int[N];
+
+	for (int i{ 0 }; i < N; i++) {
+		cin >> arr[i];
+	}
+//시작주소, 마지막 주소+1 이 기본 인자로 들어간다
+	sort(arr, arr + N, compare); //처음에 버블 정렬로 구현했으나 자꾸 시간초과 떠서
+                               //sort함수로 구현
+	for (int i{ 0 }; i < N; i++) {
+		cout << arr[i] << "\n";
+	}
+	delete[] arr;
+}
