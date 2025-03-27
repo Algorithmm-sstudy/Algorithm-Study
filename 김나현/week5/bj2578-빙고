@@ -1,0 +1,90 @@
+#include <iostream>
+using namespace std;
+
+void find(int arr[5][5], int n) {
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			if (arr[i][j] == n) {
+				arr[i][j] = 0;
+			}
+		}
+	}
+}
+
+int bingo_count(int arr[5][5]) {
+	int count = 0;
+
+	// 가로 빙고 확인
+	for (int i = 0; i < 5; i++) {
+		if (arr[i][0] == 0 && arr[i][1] == 0 && arr[i][2] == 0 && arr[i][3] == 0 && arr[i][4] == 0) {
+			count++;
+		}
+	}
+
+	// 세로 빙고 확인
+	for (int i = 0; i < 5; i++) {
+		if (arr[0][i] == 0 && arr[1][i] == 0 && arr[2][i] == 0 && arr[3][i] == 0 && arr[4][i] == 0) {
+			count++;
+		}
+	}
+
+	// 대각선 (↘) 빙고 확인
+	bool diag1 = true;
+	for (int i = 0; i < 5; i++) {
+		if (arr[i][i] != 0) {
+			diag1 = false;
+			break;
+		}
+	}
+	if (diag1) count++;
+
+	// 대각선 (↙) 빙고 확인
+	bool diag2 = true;
+	for (int i = 0; i < 5; i++) {
+		if (arr[i][4 - i] != 0) {
+			diag2 = false;
+			break;
+		}
+	}
+	if (diag2) count++;
+
+	return count;
+}
+
+
+
+int main() {
+	int chulsu[5][5];
+	int mc[5][5];
+	int ele;
+
+	int mc_speak = 0;
+	int count=0;
+
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			cin >> ele;
+			chulsu[i][j] = ele;
+		}
+	} // 철수 빙고판 입력
+
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			cin >> ele;
+			mc[i][j] = ele;
+		}
+	} // 사회자가 부르는 수 입력
+
+
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			find(chulsu, mc[i][j]);
+			mc_speak++;
+
+			if (bingo_count(chulsu) >= 3) {
+				cout << mc_speak;
+				return 0;
+			}
+		}
+	}
+}
