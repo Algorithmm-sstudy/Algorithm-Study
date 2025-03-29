@@ -23,7 +23,6 @@
 | 수학 |  <a href="https://www.acmicpc.net/problem/1009">분산 처리</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/2581">소수</a> | <a href="">🔗</a> |
 <br>
-
 ```
 To. Reviewers
 ```
