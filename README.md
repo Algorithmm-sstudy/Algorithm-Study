@@ -109,3 +109,13 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 큐 |  <a href="https://www.acmicpc.net/problem/2161">카드1</a> | <a href="https://www.acmicpc.net/problem/2161">🔗</a> |
 | 큐 |  <a href="https://www.acmicpc.net/problem/14713">앵무새</a> | <a href="https://www.acmicpc.net/problem/14713">🔗</a> |
 <br>
+
+### Week 06 (25.03.31 ~ 25.04.06)
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 구현 |  <a href="https://www.acmicpc.net/problem/20546">기적의 매매법</a> | <a href="">🔗</a> |
+| 자료구조 |  <a href="https://www.acmicpc.net/problem/1406">에디터</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/21920">서로소 평균</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/1343">폴리오미노</a> | <a href="">🔗</a> |
+<br>
