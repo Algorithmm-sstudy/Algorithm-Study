@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+
+
+int main() { //설탕배달과 같은 개념 적용
+	int n{ 0 };
+	cin >> n;
+
+	int five{ 0 };
+	int two{ 0 };
+	
+	for (int i{ n }; i > 0;) { i를 줄인다
+		if (n == 1 || n==3) { //예외적인 경우 생각
+			five = -1; //
+			break; //예외처리 후 탈출
+		}
+		else if (i % 2 == 0 && i < 10) {  //나머지는 2부터 연산
+			i = i - 2;
+			two++;
+		}
+		else {  //값이 9보다 크면 5부터 연산
+			i = i - 5;
+			five++;
+		}
+	}
+	cout << two + five;
+	return 0;
+}
