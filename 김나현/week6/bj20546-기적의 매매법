@@ -29,19 +29,19 @@ int main() {
 			junCash -= MachineDuck[j];
 		}
 	}
-	for (int j = 2; j < 14; j++) { // TIMING방법으로 주식 사기
-		if (MachineDuck[j-2] < MachineDuck[j-1] && MachineDuck[j-1] < MachineDuck[j]) { // 3일 연속 가격 상승
-			sungCash += MachineDuck[j+1] * TIMING; // 전량 매도
+	for (int j = 3; j < 14; j++) { // TIMING방법으로 주식 사기
+		if (MachineDuck[j-3] < MachineDuck[j-2] && MachineDuck[j-2] < MachineDuck[j-1]) { // 3일 연속 가격 상승
+			sungCash += MachineDuck[j] * TIMING; // 전량 매도
 			TIMING = 0;
 		}
 
-		else if (MachineDuck[j - 2] > MachineDuck[j - 1] && MachineDuck[j - 1] > MachineDuck[j]) { // 3일 연속 가격 하락
+		else if (MachineDuck[j - 3] > MachineDuck[j - 2] && MachineDuck[j - 2] > MachineDuck[j - 1]) { // 3일 연속 가격 하락
 			while (sungCash > 0) { // 주식을 살 수 없으면 break
-				if (MachineDuck[j+1] > sungCash) {
+				if (MachineDuck[j] > sungCash) {
 					break;
 				}
 				TIMING++; // 전량 매수
-				sungCash -= MachineDuck[j+1];
+				sungCash -= MachineDuck[j];
 			}
 		}
 	}
