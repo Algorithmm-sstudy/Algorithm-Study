@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
+	int cash = 0;
+	int MachineDuck[14] = { 0, };
+	int price = 0;
+
+	cin >> cash; // 주어진 현금 입력
+	int junCash = cash;
+	int sungCash = cash;
+	for (int i = 0; i < 14; i++) { // MachineDuck 주가 입력
+		cin >> price;
+		MachineDuck[i] = price;
+	}
+
+	int BNP = 0; // BNP방법으로 얻은 주식 수
+	int TIMING = 0; // TIMING방법으로 얻은 주식 수
+
+	for (int j = 0; j < 14; j++) { // BNP방법으로 주식 사기
+		while (junCash > 0) { 
+			if (MachineDuck[j] > junCash) { //주식을 살 수 없으면 break
+				break;
+			}
+			BNP++;
+			junCash -= MachineDuck[j];
+		}
+	}
+	for (int j = 3; j < 14; j++) { // TIMING방법으로 주식 사기
+		if (MachineDuck[j-3] < MachineDuck[j-2] && MachineDuck[j-2] < MachineDuck[j-1]) { // 3일 연속 가격 상승
+			sungCash += MachineDuck[j] * TIMING; // 전량 매도
+			TIMING = 0;
+		}
+
+		else if (MachineDuck[j - 3] > MachineDuck[j - 2] && MachineDuck[j - 2] > MachineDuck[j - 1]) { // 3일 연속 가격 하락
+			while (sungCash > 0) { // 주식을 살 수 없으면 break
+				if (MachineDuck[j] > sungCash) {
+					break;
+				}
+				TIMING++; // 전량 매수
+				sungCash -= MachineDuck[j];
+			}
+		}
+	}
+	
+	
+	int junResult = junCash + MachineDuck[13] * BNP;
+	int sungResult = sungCash + MachineDuck[13] * TIMING;
+
+	//cout << BNP << " " << TIMING << '\n';
+	//cout << junResult << " " << sungResult << '\n';
+
+	if (junResult > sungResult) cout << "BNP";
+	else if (junResult < sungResult) cout << "TIMING";
+	else cout << "SAMESAME";
+}
