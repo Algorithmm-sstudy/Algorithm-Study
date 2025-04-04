@@ -1,0 +1,39 @@
+//
+// Created by user on 25. 4. 4.
+//
+#include<iostream>
+using namespace std;
+
+int gcd(int a, int b){ //암기하기
+  while(b!=0){
+    int temp=b;
+    b=a%b;
+    a=temp;
+  }
+  return a;
+}
+
+int main(){
+  int N;
+  cin>>N;
+
+  int* arr=new int[N];
+
+  for(int i=0;i<N;i++){
+    cin>>arr[i];
+  }
+
+  int x;
+  cin>>x;
+  double sum=0; //데이터 타입을 double로 한다
+  double count=0;
+
+  for(int i=0;i<N;i++){
+    if(gcd(arr[i], x)==1){
+            sum+=arr[i];
+            count++;
+    }
+  }
+  cout<<sum/count<<"\n"; //여기서 소수점이 나올 수 있음
+  return 0;
+}
