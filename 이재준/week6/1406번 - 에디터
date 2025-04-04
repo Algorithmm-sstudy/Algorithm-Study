@@ -1,0 +1,133 @@
+#include<iostream>
+using namespace std;
+// 더미노드로 구현할 떄, 처음 시작은 head->next이고 마지막은 tail
+class Node{
+public:
+    char data;
+    Node* next;
+    Node* prev;
+    Node() {
+        data = ' ';
+        next = prev = NULL;
+    }
+};
+
+class Iterator {
+public:
+    Node* node;
+    Iterator() {
+        node = NULL;
+    }
+    void set(Node* node) {
+        this->node = node;
+    }
+    Iterator* operator++() {
+        node = node->next;
+        return this;
+    }
+    Iterator* operator--() {
+        node = node->prev;
+        return this;
+    }
+};
+
+class Sequence {
+public:
+
+    int size;
+    Node* head;
+    Node* tail;
+
+    Sequence() {
+        size = 0;
+        head = new Node;
+        tail = new Node;
+        head->next = tail;
+        tail->prev = head;
+    }
+    Node* begin() {
+        return head->next;
+    }
+    Node* end() {
+        return tail;
+    }
+    void insert(Iterator& p, char e) {
+        Node* newNode = new Node;
+        newNode->data = e;
+        
+        p.node->prev->next = newNode;
+        newNode->prev = p.node->prev;
+        newNode->next = p.node;
+        p.node->prev = newNode;
+        this->size++;
+
+
+        //p.node->prev->next = newNode;
+        //newNode->next = p.node;
+        //p.node->prev = newNode;
+        //newNode->prev = p.node->prev;
+        //this->size++;
+    }
+    void erase(Iterator& p) {
+        if(p.node==head->next || size==0) {
+            return;
+        }
+        Node* delNode = p.node->prev;
+        delNode->prev->next = delNode->next;
+        delNode->next->prev = delNode->prev;
+        delete delNode;
+        size--;
+    }
+    void nextP(Iterator& p) {
+        if(p.node==tail) {
+            return;
+        }
+        ++p;
+    }
+    void prevP(Iterator& p) {
+        if(p.node==head->next) {
+            return;
+        }
+        --p;
+    }
+    void print() {
+        Node* curNode = head->next;
+        for(int i = 0; i < size; i++) {
+            cout << curNode->data << "";
+            curNode = curNode->next;
+        }
+        cout << "\n";
+    }
+};
+
+int main() {
+    string str,comm;
+    cin >> str;
+    int n;
+    cin >> n;
+    Iterator p;
+    Sequence sa;
+    p.set(sa.begin());
+    for(int i = 0; i < str.size(); i++) {
+        sa.insert(p,str[i]);
+    }
+
+    while(n--) {
+        cin >> comm;
+        if(comm=="L") {
+            sa.prevP(p);
+        }
+        else if(comm=="D") {
+            sa.nextP(p);
+        }
+        else if(comm=="P") {
+            char s;
+            cin >> s;
+            sa.insert(p,s);
+        }
+        else if(comm=="B") {
+            sa.erase(p);
+        }
+    }
+    sa.print();
+}
