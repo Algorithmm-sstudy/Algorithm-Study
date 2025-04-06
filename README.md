@@ -120,3 +120,13 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 수학 |  <a href="https://www.acmicpc.net/problem/21920">서로소 평균</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/1343">폴리오미노</a> | <a href="">🔗</a> |
 <br>
+
+### Week 07 (25.04.06 ~ 25.04.13)
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 구현 |  <a href="https://www.acmicpc.net/problem/1357">뒤집힌 덧셈</a> | <a href="">🔗</a> |
+| 자료구조 |  <a href="https://www.acmicpc.net/problem/10773">제로</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/11256">사탕</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/21312">홀짝 칵테일</a> | <a href="">🔗</a> |
+<br>
