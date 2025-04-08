@@ -130,3 +130,10 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 수학 |  <a href="https://www.acmicpc.net/problem/11256">사탕</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/21312">홀짝 칵테일</a> | <a href="">🔗</a> |
 <br>
+
+### 자료구조 실습대비(**필수 아님**)
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 트리 |  <a href="https://www.acmicpc.net/problem/1991">트리 순회</a> | <a href="https://www.acmicpc.net/problem/1991">🔗</a> |
+| 트리 |  <a href="https://www.acmicpc.net/problem/2263">트리의 순회</a> | <a href="https://www.acmicpc.net/problem/2263">🔗</a> |
+<br>
