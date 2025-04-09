@@ -1,0 +1,33 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int t,r,c;
+    cin >> t;
+    int j, n;
+    while(t--) {
+        int count = 0;
+        int size[1001];
+        cin >> j >> n;
+        for(int i = 0; i < n; i++){
+            cin >> r >> c;
+            size[i] = r * c;
+        }
+        sort(size, size+n, greater<int>());
+        for(int i = 0; i < n; i++){
+            if(j > size[i]) {
+                count++;
+                j -= size[i];
+            }
+            else{
+                count++;
+                cout << count << "\n";
+                break;
+            }
+        }
+
+    }
+}
