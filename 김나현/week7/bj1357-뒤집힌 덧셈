@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int rev(int x) {
+	int one_num;
+	int ten_num;
+	int hun_num;
+	int tho_num;
+
+	if (x < 10) {
+		return x;
+	}
+	else if (x < 100) {
+		ten_num = 10 * (x % 10);
+		one_num = x / 10;
+		return ten_num + one_num;
+	}
+	else if (x < 1000) {
+		hun_num = 100 * ((x % 100) % 10);
+		ten_num = 10 * ((x % 100) / 10);
+		one_num = x / 100;
+		return hun_num + ten_num + one_num;
+	}
+	else if (x < 10000) {
+		tho_num = 1000 * (((x%1000)%100)%10);
+		hun_num = 100 * (((x % 1000) % 100) / 10);
+		ten_num = 10 * ((x % 1000) / 100);
+		one_num = x / 1000;
+		return tho_num + hun_num + ten_num + one_num;
+	}
+}
+int main() {
+	int x, y;
+	cin >> x >> y;
+	rev(x);
+	rev(y);
+	cout << rev(rev(x) + rev(y));
+
+}
