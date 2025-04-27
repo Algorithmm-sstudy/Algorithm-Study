@@ -136,3 +136,13 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 트리 |  <a href="https://www.acmicpc.net/problem/1991">트리 순회</a> | <a href="https://www.acmicpc.net/problem/1991">🔗</a> |
 | 트리 |  <a href="https://www.acmicpc.net/problem/2263">트리의 순회</a> | <a href="https://www.acmicpc.net/problem/2263">🔗</a> |
 <br>
+
+### Week 08 (25.04.28 ~ 25.05.04)
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 구현 |  <a href="https://www.acmicpc.net/problem/5800">성적 통계</a> | <a href="">🔗</a> |
+| 자료구조 |  <a href="https://www.acmicpc.net/problem/2075">N번쨰 큰 수</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/7567">그릇</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/5347">LCM</a> | <a href="">🔗</a> |
+<br>
