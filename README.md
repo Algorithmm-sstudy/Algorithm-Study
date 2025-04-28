@@ -7,7 +7,7 @@
 
 ## 🗓️ 파일구조는 다음예시처럼 해주세요 
 - ex) 알고리즘유형별 문제이름-문제번호
-<img width="252" alt="image" src="https://github.com/user-attachments/assets/71a5fc6c-ca41-4eda-ab13-f5c806c1570c">
+<img width="252" alt="image" src="https://github.com/user-attachments/assets/71a5fc6c-ca41-4eda-ab13-f5c806c1570c"> 
 
 ## ❗️ 브랜치 규칙 
 - main에 푸쉬하는 것을 금지합니다 (전부 날라갈 위험이 있음!!)
