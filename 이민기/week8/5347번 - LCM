@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+typedef long long ll;
+//typedf: 프로그래머가 직접 타입의 별칭을 생성
+//typedef 자료형 별칭 순서로 작성
+//long long 타입: int형 연산에서 초과되는 범위를 다룰 때 주로 사용
+//범위가 훨씬 더 크다.
+
+ll gcd(ll a, ll b) { //유클리드 호제법
+    while (b!=0) {
+        ll r = a%b;
+        a = b;
+        b = r;
+    }
+    return a;
+}
+
+ll lcd(ll a,ll b) { //최소공배수는 두 수의 곱 나누기 두 수의 최대공약수
+    return (a*b)/gcd(a,b);
+}
+
+int main() {
+
+    int t; //테스트케이스
+    cin>>t;
+
+    ll a,b; //주어진 수
+    while (t--) {
+        cin>>a>>b;
+        cout<<lcd(a,b)<<"\n";
+    }
+}
