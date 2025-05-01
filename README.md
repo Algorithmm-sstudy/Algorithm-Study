@@ -142,7 +142,7 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | Category | Title | Link |
 | :------: | :---: | :--: |
 | 구현 |  <a href="https://www.acmicpc.net/problem/5800">성적 통계</a> | <a href="">🔗</a> |
-| 자료구조 |  <a href="https://www.acmicpc.net/problem/2075">N번쨰 큰 수</a> | <a href="">🔗</a> |
+| 자료구조 |  <a href="https://www.acmicpc.net/problem/2075">N번째 큰 수</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/7567">그릇</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/5347">LCM</a> | <a href="">🔗</a> |
 <br>
