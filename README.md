@@ -146,3 +146,22 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 수학 |  <a href="https://www.acmicpc.net/problem/7567">그릇</a> | <a href="">🔗</a> |
 | 수학 |  <a href="https://www.acmicpc.net/problem/5347">LCM</a> | <a href="">🔗</a> |
 <br>
+
+### Week 09 (25.05.05 ~ 25.05.11)
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 구현 |  <a href="https://www.acmicpc.net/problem/1913">달팽이</a> | <a href="">🔗</a> |
+| 그리디 |  <a href="https://www.acmicpc.net/problem/1758">알바생 강호</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/3135">라디오</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/20044">Project Teams</a> | <a href="">🔗</a> |
+<br>
+
+### 자료구조 실습대비(**필수 아님**)
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 힙 |  <a href="https://www.acmicpc.net/problem/1927">최소 힙</a> | <a href="https://www.acmicpc.net/problem/1991">🔗</a> |
+| 힙 |  <a href="https://www.acmicpc.net/problem/11279">최대 힙</a> | <a href="https://www.acmicpc.net/problem/2263">🔗</a> |
+<br>
+
+
