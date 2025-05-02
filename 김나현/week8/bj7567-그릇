@@ -1,1 +1,20 @@
-///
+#include <iostream>
+using namespace std;
+
+int main() {
+	string bowl;
+	bowl.length() >= 3;
+	bowl.length() <= 50;
+	cin >> bowl;
+
+	int height = 10;
+	for (int i = 1; i < bowl.length(); i++) {
+		if (bowl[i - 1] == bowl[i]) {
+			height += 5;
+		}
+		else {
+			height += 10;
+		}
+	}
+	cout << height;
+}
