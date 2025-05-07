@@ -1,0 +1,49 @@
+#include<iostream>
+#include<list>
+#include<vector>
+using namespace std;
+
+struct compare {
+    bool operator()(int lhs, int rhs) {
+        return lhs > rhs;
+    }
+};
+
+class SortedPQ {
+public:
+    compare comp;
+    list<int> elements;
+
+    SortedPQ() = default;
+
+    void push(int value) {
+        list<int>:: iterator it = elements.begin();
+        while(it != elements.end() && comp(*it,value)) {
+            ++it;
+        }
+        elements.insert(it,value);
+    }
+    int top() {
+        return elements.front();
+    }
+    void pop() {
+        elements.pop_front();
+    }
+};
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    SortedPQ pq;
+    int N,size,num;
+    cin >> N;
+    size = N * N;
+    for(int i = 0; i < size; i++) {
+        cin >> num;
+        pq.push(num);
+    }
+    for(int j = 1; j < N; j++) {
+        pq.pop();
+    }
+    cout << pq.top() << "\n";
+}
