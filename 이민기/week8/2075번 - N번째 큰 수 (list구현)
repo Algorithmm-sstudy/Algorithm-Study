@@ -1,0 +1,62 @@
+#include<iostream>
+#include<list>
+#include<vector>
+using namespace std;
+
+struct compare {
+    bool operator()(int lhs, int rhs) {
+        return lhs<rhs; //값이 더 큰 것이 우선순위가 높다.
+    }
+};
+
+class sortedPQ {
+public:
+    list<int> elements;
+    compare comp;
+    sortedPQ()=default;
+    int size() {
+        return elements.size();
+    }
+    bool empty() {
+        return size()==0;
+    }
+    void push(int x) {
+        auto it=elements.begin();
+        while (it!=elements.end()&&comp(*it,x)) {
+            ++it;
+        }
+        elements.insert(it, x);
+    }
+    int top() {
+        if (empty()) {
+            return -1;
+        }
+        return elements.front();
+    }
+    void pop() {
+        if (empty()) {
+            cout<<"empty\n";
+            return;
+        }
+        elements.pop_front();
+    }
+};
+
+int main() {
+    int N;
+    cin>>N;
+
+    sortedPQ pq;
+
+    for (int i=0;i<N*N;i++) {
+        int x;
+        cin>>x;
+        pq.push(x); //N*N개의 수 다 PQ에 넣기
+        //작은 수 부터 정렬
+        if (pq.size()>N) {
+            pq.pop(); //n*n개 수 중에서 큰 수 n개만 유지
+        }
+    }
+
+    cout<<pq.top()<<"\n";
+}
