@@ -3,7 +3,9 @@
 using namespace std;
 
 int main() {
-	int K, N, X = 1;
+
+	int K, N;
+	int X = 1;
 	int score;
 	int cl[50] = {};
 	
