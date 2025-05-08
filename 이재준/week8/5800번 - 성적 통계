@@ -1,0 +1,27 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int cla,student;
+    int Class[101];
+    cin >> cla;
+    for(int j = 1; j <= cla; j++) {
+        cin >> student;
+        for(int i = 0; i < student; i++) {
+            cin >> Class[i];
+        }
+        sort(Class, Class+student);
+        int max = 0;
+
+        for(int k = 1; k < student; k++) {
+            if(Class[k] - Class[k-1] > max) {
+                max = Class[k] - Class[k-1];
+            }
+        }
+        cout << "Class " << j << "\n" << "Max " << Class[student-1]
+        << ", Min " << Class[0] << ", Largest gap " << max << "\n";
+    }
+}

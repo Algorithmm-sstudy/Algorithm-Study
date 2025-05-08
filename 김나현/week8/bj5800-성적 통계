@@ -1,0 +1,34 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+	int k;
+	int n;
+	int classNum = 1;
+
+	cin >> k;
+	while (k--) {
+		int score;
+		int studentScore[50];
+		int max, min, gap = 0;
+
+		cin >> n;
+		for (int i = 0; i < n; i++) {
+			cin >> score;
+			studentScore[i] = score;
+		}
+
+		sort(studentScore, studentScore + n, greater<int>());
+		max = studentScore[0];
+		min = studentScore[n - 1];
+		for (int i = 1; i < n; i++) {
+			if (gap < studentScore[i - 1] - studentScore[i])
+				gap = studentScore[i - 1] - studentScore[i];
+		}
+
+		cout << "Class " << classNum << '\n';
+		cout << "Max " << max << ", Min " << min << ", Largest gap " << gap << '\n';
+		classNum++;
+	}
+}
