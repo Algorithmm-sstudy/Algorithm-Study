@@ -1,0 +1,31 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int cur, wan,N;
+    int arr1[6];
+    cin >> cur >> wan >> N;
+
+    int diff = abs(cur-wan);
+    int total = abs(cur-wan);
+
+    for(int i = 0; i < N; i++) {
+        cin >> arr1[i];
+    }
+
+    for(int j = 0; j < N; j++) {
+        if(arr1[j] == wan) {
+            total = 1;
+        }
+        else {
+            if(abs(wan - arr1[j]) + 1 < total) {
+                total = abs(wan-arr1[j]) + 1;
+                diff = total;
+            }
+        }
+    }
+    cout << total << "\n";
+}
