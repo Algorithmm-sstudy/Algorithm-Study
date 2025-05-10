@@ -1,0 +1,125 @@
+#include<iostream>
+#include<list>
+#include<vector>
+using namespace std;
+
+struct compare {
+    bool operator()(int lhs,int rhs) {
+        return lhs<rhs; //값이 작을수록 우선순위가 높은 최소 힙 기반
+    }
+};
+
+class heapPQ {
+public:
+    vector<int> elements; //벡터로 구현한다
+    compare comp;
+
+    void swap(int idx1,int idx2) {
+        int temp=elements[idx1];
+        elements[idx1]=elements[idx2];
+        elements[idx2]=temp;
+    }
+    void upheap(int idx) {
+        if (idx==1) {
+            return; //루트에 도달하면 종료
+        }
+        int parent_idx=idx/2; //부모의 인덱스는 나누기 2로 구함
+
+        if (!comp(elements[parent_idx],elements[idx])) {
+            //부모 노드가 idx노드보다 크면 바꾸기
+            swap(idx,parent_idx);
+            upheap(parent_idx); //재귀적으로 upheap수행
+        }
+    }
+    void downheap(int idx) {
+        int left_idx=idx*2; //왼쪽 노드의 인덱스
+        int right_idx=idx*2+1; //오른쪽 노드의 인덱스
+
+        int child_idx;
+        if (left_idx>size()) { //왼쪽 자식이 인덱스 벗어나면 오른쪽 자식도 벗어남
+            return; //그러므로 리턴
+        }
+
+        if (left_idx==size()) { //맨 끝에 있는 리프노드
+            child_idx=left_idx;
+        } //왼쪽 자식이 리프 노드이면 왼쪽 자식을 확정
+        else{ //왼쪽 자식의 우선순위와 오른쪽 자식의 우선순위 비교
+            if (comp(elements[left_idx],elements[right_idx])) {
+                child_idx=left_idx; //왼쪽이 높으면 선택
+            }
+            else {
+                child_idx=right_idx; //오른쪽이 높으면 선택
+            }
+        }
+
+        if (!comp(elements[idx],elements[child_idx])) {
+            swap(idx,child_idx); //힙 순서 안 맞으면 둘이 교환
+            downheap(child_idx); //자식 노드에서 재귀적으로 시행
+        }
+        //힙 순서 맞으면 아무것도 안함
+    }
+
+    explicit heapPQ() {
+        elements.push_back(-1);
+    }
+    int size() {
+        return elements.size()-1;
+    }
+    bool empty() {
+        return size()==0;
+    }
+    void push(int x) {
+        elements.push_back(x);
+        upheap(size()); //힙 전반에 걸쳐 우선순위 수정
+    }
+    int top() {
+        if (empty()) {
+            return -1;
+        }
+        return elements[1];
+    }
+    void pop() {
+        if (empty()) {
+            cout<<"0\n";
+            return;
+        }
+        cout<<top()<<"\n";
+        swap(1,size()); //루트랑 바꾸기
+        elements.pop_back(); //루트 삭제
+        downheap(1); //바뀐 루트에서 down힙 절차
+    }
+    void second_top() {
+        if (size()<2) {
+            cout<<"Error\n";
+        }
+        else if (size()==2) {
+            cout<<elements[2]<<"\n";
+        }
+        else {
+            if (comp(elements[2],elements[3])) {
+                cout<<elements[2]<<"\n";
+            }
+            else {
+                cout<<elements[3]<<"\n";
+            }
+        }
+    }
+};
+
+int main() {
+    int N;
+    cin>>N;
+
+    heapPQ pq;
+
+    int x;
+    while (N--) {
+        cin>>x;
+        if (x==0) {
+            pq.pop();
+        }
+        else {
+            pq.push(x);
+        }
+    }
+}
