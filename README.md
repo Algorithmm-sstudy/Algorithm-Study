@@ -194,6 +194,9 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | :------: | :---: | :--: |
 | 시간복잡도 |  <a href="https://www.acmicpc.net/problem/24313">알고리즘 수업 - 점근적 표기1</a> | <a href="">🔗</a> |
 | 정렬 |  <a href="https://www.acmicpc.net/problem/1015">수열 정렬</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/1057">토너먼트</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/1094">막대기</a> | <a href="">🔗</a> |
+
 <br>
 
 
