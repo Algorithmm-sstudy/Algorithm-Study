@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int move(int a, int b, int f[], int n) {
+	int count = 0;
+	int cur = a;
+	int gap = abs(a-b);
+	for (int i = 0; i < n; i++) {
+		if (gap > abs(b - f[i])) {
+			gap = abs(b - f[i]);
+		}
+	}
+	if (gap != abs(a - b)) count++;
+	count += gap;
+	return count;
+}
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	int cur = a;
+	int count = 0;
+	int n;
+	cin >> n;
+	int* favorit = new int[n];
+	for (int i = 0; i < n; i++) {
+		cin >> favorit[i];
+	}
+	cout << move(a, b, favorit, n);
+}
