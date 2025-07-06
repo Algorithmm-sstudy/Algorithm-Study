@@ -203,17 +203,17 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 
 | Category | Title | Link |
 | :------: | :---: | :--: |
-|  |  <a href="https://www.acmicpc.net/problem/1302">베스트셀러</a> | <a href="">🔗</a> |
-|  |  <a href="https://www.acmicpc.net/problem/2075">N번째 큰 수</a> | <a href="">🔗</a> |
-|  |  <a href="https://www.acmicpc.net/problem/7785">회사에 있는 사람</a> | <a href="">🔗</a> |
-|  |  <a href="https://www.acmicpc.net/problem/2346">풍선 터뜨리기</a> | <a href="">🔗</a> |
-|  |  <a href="https://www.acmicpc.net/problem/2841">외계인의 기타 연주</a> | <a href="">🔗</a> |
-|  |  <a href="https://www.acmicpc.net/problem/17219">비밀번호 찾기</a> | <a href="">🔗</a> |
-|  |  <a href="https://www.acmicpc.net/problem/2239">스도쿠</a> | <a href="">🔗</a> |
-|  |  <a href="https://www.acmicpc.net/problem/1074">Z</a> | <a href="">🔗</a> |
-|  |  <a href="https://www.acmicpc.net/problem/2579">계단 오르기</a> | <a href="">🔗</a> |
-|  |  <a href="https://www.acmicpc.net/problem/1987">알파벳</a> | <a href="">🔗</a> |
-|  |  <a href="https://www.acmicpc.net/problem/1107">리모컨</a> | <a href="">🔗</a> |
-|  |  <a href="https://www.acmicpc.net/problem/1326">폴짝폴짝</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/1302">베스트셀러</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/2075">N번째 큰 수</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/7785">회사에 있는 사람</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/2346">풍선 터뜨리기</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/2841">외계인의 기타 연주</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/17219">비밀번호 찾기</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/2239">스도쿠</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/1074">Z</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/2579">계단 오르기</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/1987">알파벳</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/1107">리모컨</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/1326">폴짝폴짝</a> | <a href="">🔗</a> |
 
 <br>
