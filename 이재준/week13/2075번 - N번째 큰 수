@@ -1,0 +1,38 @@
+#include<iostream>
+#include<algorithm>
+#include<queue>
+using namespace std;
+
+int main() {
+    // N번째 큰 수 찾는 프로그램
+    // 1. 2차원 배열 or 1차원 배열 sort
+    // 2. 정렬해주는 알고리즘....
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int N;
+    int arr1[2250001];
+    cin >> N;
+    for(int i = 0; i < N * N; i++) {
+        cin >> arr1[i];
+    }
+
+    sort(arr1, arr1+ N * N, greater<int>());
+
+    cout << arr1[N-1];
+
+
+    /*
+
+     int N,num;
+    priority_queue<int> qu;
+    cin >> N;
+    for(int i = 0; i < N * N; i++) {
+        cin >> num;
+        qu.push(num);
+    }
+    for(int j = 0; j < N-1; j++) {
+        qu.pop();
+    }
+    cout << qu.top();
+     */
+}
