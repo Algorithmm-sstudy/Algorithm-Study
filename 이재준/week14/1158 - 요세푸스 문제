@@ -1,0 +1,42 @@
+#include<iostream>
+#include<queue>
+using namespace std;
+
+// N명의 사람 원을 이루어서 앉는다. K번째 사람 제거
+// 원형 큐 사용해서 삭제 느낌?
+
+// 2초 256
+
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int n,k;
+    queue<int> qu;
+    cin >> n >> k;
+
+    for(int i = 1; i <= n; i++) {
+        qu.push(i);
+    }
+
+    // 1 2 3 4 5 6 7
+    // 7 1 2 4 5  , 3 6 2
+
+    cout << "<";
+
+    while(!qu.empty()) {
+        for(int j = 1; j < k; j++) {
+            int cur = qu.front();
+            qu.pop();
+            qu.push(cur);
+        }
+        if(qu.size() == 1) {
+            cout << qu.front() << ">";
+        }
+        else {
+            cout << qu.front() << ", ";
+        }
+        qu.pop();
+    }
+
+}
