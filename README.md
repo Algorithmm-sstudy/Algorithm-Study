@@ -217,3 +217,20 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 땅울림 |  <a href="https://www.acmicpc.net/problem/1326">폴짝폴짝</a> | <a href="">🔗</a> |
 
 <br>
+
+### Week 13 (25.07.18 ~ 25.07.25) 
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/10799">쇠막대기</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/1406">에디터</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/1158">요세푸스 문제</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/13335">트럭</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/12789">도키도키 간식드리미</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/17952">과제는 끝나지 않아!</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/25192">인사성 밝은 곰곰이</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/14713">앵무새</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/19638">센티와 마법의 뿅망치</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/1764">듣보잡</a> | <a href="">🔗</a> |
+
+<br>
