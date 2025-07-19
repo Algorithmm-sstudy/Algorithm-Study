@@ -1,0 +1,27 @@
+#include<iostream>
+#include<map>
+#include<algorithm>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    int num; string name;
+    map<string,int> book;
+
+    cin >> num;
+    while(num--) {
+        cin >> name;
+        book[name]++;
+    }
+
+    int max = 0; string maxBook;
+    for(auto x : book) {
+        if(x.second > max) {
+            max = x.second;
+            maxBook = x.first;
+        }
+    }
+    cout << maxBook;
+}
