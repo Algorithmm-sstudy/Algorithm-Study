@@ -218,7 +218,7 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 
 <br>
 
-### Week 13 (25.07.18 ~ 25.07.25) 
+### Week 14 (25.07.18 ~ 25.07.25) 
 
 | Category | Title | Link |
 | :------: | :---: | :--: |
