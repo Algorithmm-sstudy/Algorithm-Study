@@ -1,0 +1,39 @@
+#include<iostream>
+#include<stack>
+#include<map>
+
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    stack<pair<int,int>> st;
+
+    int n;
+    cin >> n;
+
+    int arr[n];
+    int arr1[500001] = {0};
+
+    for(int i = 1; i <= n; i++) {
+        cin >> arr[i]; // 6 9 5 7 4
+    }
+
+    for(int j = 1; j <= n; j++) {
+        bool ch = true;
+        while(!st.empty()) {
+            if(st.top().second > arr[j]) {
+                ch = false;
+                cout << st.top().first << " ";
+                break;
+            }
+            else {
+                st.pop();
+            }
+        }
+        if(ch) {
+            cout << 0 << " ";
+        }
+        st.push({j,arr[j]});
+    }
+}
