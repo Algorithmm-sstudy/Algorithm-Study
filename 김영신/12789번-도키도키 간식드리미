@@ -1,0 +1,39 @@
+#include <iostream>
+#include <stack>
+#include <queue>
+
+using namespace  std;
+
+stack<int> st; // 공간
+queue<int> q; // 대기열
+int snack = 1;
+
+int main() {
+    int n, k;
+    cin >> n;
+    for (int i =0; i< n; i++) {
+        cin >> k;
+        q.push(k);
+    }
+
+
+    while (!q.empty() || !st.empty()) {
+        if (!q.empty() && q.front() == snack) {
+            snack++;
+            q.pop();
+        }
+        else if (!st.empty() && st.top() == snack) {
+            snack++;
+            st.pop();
+        }
+        else if (!q.empty()) {
+            st.push(q.front());
+            q.pop();
+        }
+        else {
+            cout << "Sad";
+            return 0;
+        }
+    }
+    cout << "Nice";
+}
