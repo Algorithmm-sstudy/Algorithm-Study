@@ -218,7 +218,7 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 
 <br>
 
-### Week 14 (25.07.18 ~ 25.07.25) 
+### Week 14 (25.07.18 ~ 25.07.25) 기본
 
 | Category | Title | Link |
 | :------: | :---: | :--: |
@@ -232,5 +232,22 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 땅울림 |  <a href="https://www.acmicpc.net/problem/14713">앵무새</a> | <a href="">🔗</a> |
 | 땅울림 |  <a href="https://www.acmicpc.net/problem/19638">센티와 마법의 뿅망치</a> | <a href="">🔗</a> |
 | 땅울림 |  <a href="https://www.acmicpc.net/problem/1764">듣보잡</a> | <a href="">🔗</a> |
+
+<br>
+
+### Week 14 (25.07.18 ~ 25.07.25) 도전
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/17298">오큰수</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/5052">전화번호 목록</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/2493">탑</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/1655">가운데를 말해요</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/17299">오등큰수</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/7662">이중 우선순위 큐</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/3190">뱀</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/11000">강의실 배정</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/9935">문자열 폭발</a> | <a href="">🔗</a> |
+| 땅울림 |  <a href="https://www.acmicpc.net/problem/2812">크게 만들기</a> | <a href="">🔗</a> |
 
 <br>
