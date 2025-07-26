@@ -1,0 +1,41 @@
+#include <iostream>
+#include <queue>
+
+using namespace std;
+
+int main() {
+    priority_queue<int> pq;
+
+    int n, h, t;
+    cin >> n >> h >> t;
+
+
+    int g;
+    for (int i =0;i < n; i++) {
+        cin >> g;
+        pq.push(g);
+    }
+
+    int cnt = 0, i = 0;
+    while (i < t || cnt != t) {
+        if (pq.top() < h) {
+            cout << "YES" << "\n" << cnt;
+            return 0;
+        }
+        if (pq.top() >= h) {
+            int k = pq.top();
+            if (k != 1) k /= 2;
+            pq.pop();
+            pq.push(k);
+            cnt++;
+        }
+        i++;
+    }
+    if (pq.top() < h) {
+        cout << "YES" << "\n" << cnt;
+        return 0;
+    }
+    else {
+        cout << "NO" << "\n" << pq.top();
+    }
+}
