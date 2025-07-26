@@ -1,0 +1,61 @@
+#include <iostream>
+#include <vector>
+#include <sstream>
+#include <string>
+
+using namespace std;
+
+vector<vector<string>> q;
+vector<string> sentence;
+int n;
+string s;
+
+
+string token;
+bool result = 0;
+
+int main() {
+    cin >> n;
+    q.resize(n);
+    cin.ignore(); // 버퍼에서 엔터 삭제
+    for (int i=0;i<n;i++) {
+        getline(cin, s);
+
+        istringstream ss(s);
+        while (getline(ss, token , ' ')) {
+            q[i].push_back(token);
+        }
+    }
+
+    getline(cin, s);
+    istringstream ss2(s);
+    while (getline(ss2, token, ' ')) {
+        sentence.push_back(token);
+
+    }
+
+
+    for (int i =0; i < sentence.size();i++) {
+        for (int j = 0; j < n; j++) {
+            if (!q[j].empty() && sentence[i] == q[j].front()) {
+                // q[j]가 empty하지 않다는 거도 넣어야함 (만약 비었으면 잘못된 비교니까)
+                result = 1;
+                q[j].erase(q[j].begin());
+                break;
+            }
+        }
+        if (result == 0) {
+            cout << "Impossible";
+            return 0;
+        }
+        result = 0; // 여기까지왔다는 건 발견해서 result가 1이라는 뜻
+    }
+    for(int i = 0; i< n; i++){
+      if (!q[i].empty()) {
+          cout << "Impossible";
+          return 0;
+      }
+    }
+
+    cout << "Possible";
+}
