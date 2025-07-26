@@ -1,0 +1,25 @@
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main() {
+    set<string> s;
+
+    int n, cnt = 0;
+    cin >> n;
+
+    string name;
+    while (n--) {
+        cin >> name;
+        if (name != "ENTER"){
+            if (s.find(name) == s.end()) {
+                s.insert(name);
+                cnt++;
+            }
+        }
+        else { // name == ENTER
+            s.clear();
+        }
+    }
+    cout << cnt;
+}

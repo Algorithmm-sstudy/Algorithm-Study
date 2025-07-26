@@ -1,0 +1,49 @@
+#include <iostream>
+#include <stack>
+#include <utility>
+using namespace std;
+
+int main() {
+    int n, a, t, task;
+    cin >> n;
+
+    pair<int, int> p;
+    p.first = 0;
+    p.second = 0;
+    stack<pair<int, int>> wait; // 대기 스택
+
+    int cnt = 0;
+    while (n--) {
+        cin >> task;
+        if (task==1) {
+            cin >> a >> t;
+           if (p.first == 0 && p.second == 0) {
+               p.first = a; p.second = t - 1; // 시간 1초 쓴 거니까
+           }
+           else {
+               wait.push(p);
+               p.first = a; p.second = t - 1;
+           }
+        }
+        else {
+            p.second--;
+
+        }
+        // 위의 정리과정이 끝나고, 시간이 끝난 숙제가 생겼을 때
+        if (p.second == 0) {
+            cnt += p.first;
+            if (!wait.empty()) {
+                p.first = wait.top().first;
+                p.second = wait.top().second;
+                wait.pop();
+            }
+            else {
+                p.first = 0;
+                p.second = 0;
+            }
+
+        }
+    }
+    cout << cnt;
+
+}

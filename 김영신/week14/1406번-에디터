@@ -1,0 +1,70 @@
+#include <iostream>
+#include <stack>
+#include <vector>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
+    stack<char> st;
+    stack<char> sub;
+    st.push('0'); // 맨 앞을 표기
+
+    string s;
+    cin >> s;
+    for (int i =0; i<s.length(); i++) {
+        st.push(s[i]);
+    }
+
+    int n;
+    cin >> n;
+
+    char cmd, k;
+
+    char topInfo;
+    while(n--){
+        cin >> cmd;
+          if (cmd == 'L') {
+              if (st.top() != '0') {
+                  topInfo = st.top();
+                  st.pop();
+                  sub.push(topInfo);
+              }
+          }
+          else if (cmd == 'D') {
+              if (!sub.empty()) {
+                  topInfo = sub.top();
+                  sub.pop();
+                  st.push(topInfo);
+              }
+          }
+          else if (cmd == 'B') {
+              if (st.top() != '0') st.pop();
+          }
+          else {
+              char pushInfo;
+              cin >> pushInfo;
+              st.push(pushInfo);
+          }
+        //cout << st.top() << endl;
+    }
+    while (!sub.empty()) {
+        st.push(sub.top());
+        sub.pop();
+    }
+
+    vector<char> vec;
+    while (st.size() > 1) {
+        vec.push_back(st.top());
+        st.pop();
+    }
+    reverse(vec.begin(), vec.end());
+
+    for (auto i : vec) {
+        cout << i;
+    }
+}
