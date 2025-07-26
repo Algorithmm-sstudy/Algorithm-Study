@@ -1,0 +1,48 @@
+#include<iostream>
+#include<stack>
+
+using namespace std;
+
+// A(i)보다 오른쪽에 있으면서, 큰 수 중에서 가장 왼쪽에 있는 수
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+   
+    stack<int> st;
+    int n;
+
+    cin >> n;
+    int arr1[n];
+    int arr2[1000001] = {0};
+
+    for(int i = 0; i < n; i++) {
+        cin >> arr1[i];
+    }
+
+    // 3과 7,2,5를 순서대로 비교하고 5를 선택
+    // 그럼 7,2,5를 스택에 넣고 조져봐
+
+    for(int j = n - 1; j >= 0; j--) {
+        // 뒤에부터 비교하면서 맨 처음에 무조건 비어있으므로
+        // 7이 스택에 넣어짐. 그러면 자연스럽게 arr2[3] = 0
+        // 그리고 7 > arr1[2] = 2 비교
+
+        while(!st.empty()) {
+            if(st.top() > arr1[j]) {
+                arr2[j] = st.top();
+                break;
+            }
+            else {
+                st.pop();
+            }
+        }
+        if(arr2[j] == 0) {
+            arr2[j] = -1;
+        }
+        st.push(arr1[j]);
+    }
+
+    for(int k = 0; k < n; k++) {
+        cout << arr2[k] << " ";
+    }
+}

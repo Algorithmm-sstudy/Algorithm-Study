@@ -1,0 +1,39 @@
+#include<iostream>
+#include<stack>
+using namespace std;
+
+// 문제 이해, 입출력 조건, 풀이, 구현/디버깅, 최적화
+
+// 쇠막대기는 자신보다 긴 쇠막대기 위에만 놓일 수 있다
+// () 레이저, 쇠막대기 왼쪽 끝 (, 오른쪽 끝 )
+
+// 1초, 256
+
+// stack에 넣고 ( , ( ) 짝을 맞춘다
+// 레이저를 만나면 그 전 ( 더하고
+
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int count = 0;
+    stack<int> sta;
+    string s;
+    cin >> s;
+
+    for(int i = 0; i < s.length(); i++) {
+        if(s[i] == '(' && s[i+1] == ')') {
+            count += sta.size();
+            i += 1;
+        }
+        else if(s[i] == '(') {
+            sta.push(s[i]);
+        }
+        else if(s[i] == ')') {
+            sta.pop();
+            count += 1;
+        }
+    }
+
+   cout << count << "\n";
+}

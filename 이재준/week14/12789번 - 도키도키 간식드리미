@@ -1,0 +1,59 @@
+#include<iostream>
+#include<stack>
+#include<queue>
+using namespace std;
+
+// a - 줄 서 있는 곳과 b - 한 명씩 설 수 잇는 공간 분리
+// space보다 작고 뒤에 수보다 크면 space, 작고 뒤에 수보다 작으면 간식
+//
+// a는 선입, b는 후입 느낌
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    // Day 2
+    // if문 조건과 마지막에 순서대로 있는지 확인하는 부분이 틀렸을 가능성 높음
+    // 그렇다면 어떤 식으로 순서를 확인할지...
+    // 순서를 나타내는 변수 하나 만들고, 그 순서에 맞으면 간식, 아니면 한명 씩 공간
+
+    queue<int> line;
+    stack<int> space;
+
+    int num, number, cur = 1;
+
+    cin >> num;
+    for(int i = 0; i < num; i++) {
+        cin >> number;
+        line.push(number);
+    }
+
+    while(!line.empty()) {
+        if(line.front() == cur) { // 순서와 번호표가 일치하는 경우 바로 삭제
+            cur++;
+            line.pop();
+        }
+        else { // 순서와 번호표가 일치하지 않는 경우
+            if(space.size() != 0 && space.top() == cur) {
+                cur++;
+                space.pop();
+            }
+            else {
+                space.push(line.front());
+                line.pop();
+            }
+        }
+    }
+
+    while(!space.empty()) {
+        if(cur == space.top()) {
+            cur++;
+            space.pop();
+        }
+        else {
+            cout << "Sad";
+            return 0;
+        }
+    }
+    cout << "Nice";
+}
