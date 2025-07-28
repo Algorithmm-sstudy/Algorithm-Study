@@ -1,0 +1,54 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+// nCr = n! / (r! * (n-r)!)
+// 끝자리 0의 개수 출력
+// 공식을 사용해야할지 등 고민하다가 2,5가 곱해지는 개수만 찾았던 문제 기억남
+// 2**3 * 5**4일 경우 0 3개
+// 0의 개수를 찾기 위해서는 소인수분해했을 때 2,5인 수만 찾으면 된다
+// 25 12일 경우 25! / 12! * 13!이니까 , 5인경우는 5,10,15,20,25의 개수와 분자의 개수 이런식으로
+// 2의배수와 5의 배수의 개수를 세야 한다.
+
+long long find2(long long a) {
+    long long count = 0;
+
+    // 처음에 이런식으로 개수를 세려고 했는데 계속해서 답이 4가 나옴.
+    // 그렇다는건 중복이 있다는거라고 생각했음.
+    // 그래서 i를 2,4,8이런식으로 2의 거듭제곱으로 나타내고 그걸 a에서 나누면
+    // 거듭제곱이 몇개씩 잇는지 확인 가능?
+    //for(int i = 2; i <= a; i++) {
+      //  if(i % 2 == 0) {
+        //    count += a/i;
+        //}
+    //}
+
+    for(long long i = 2; i <= a; i*=2) {
+        count += a/i;
+    }
+    return count;
+}
+
+long long find5(long long a) {
+    long long count = 0;
+    /*
+     for(int i = 5; i <= a; i++) {
+        if(i % 5 == 0) {
+            count += a/i;
+        }
+    }
+     */
+    for(long long i = 5; i <= a; i*=5) {
+        count += a / i;
+    }
+    return count;
+}
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    long long n,m;
+    cin >> n >> m;
+
+    cout << min(find2(n) - find2(m) - find2(n-m), find5(n) - find5(m) - find5(n-m));
+}
