@@ -268,3 +268,22 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 기본 |  <a href="https://www.acmicpc.net/problem/10971">외판원 순회 2</a> | <a href="">🔗</a> |
 
 <br>
+
+### Week 16 (25.08.02 ~ 25.08.08) 
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 기본 |  <a href="https://www.acmicpc.net/problem/11659">구간 합 구하기 4</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/11660">구간 합 구하기 5</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/9663">N-Queen</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/6603">로또</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/10819">차이를 최대로</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/14889">스타트와 링크</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/16457">단풍잎 이야기</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/18111">마인크래프트</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/18429">근손실</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/14888">연산자 끼워넣기</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/2503">숫자 야구</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/2580">스도쿠</a> | <a href="">🔗</a> |
+
+<br>
