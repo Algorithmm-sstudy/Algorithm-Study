@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    int n,m,x1,y1,x2,y2,count = 0;
+    cin >> n >> m;
+
+    int arr[n+1][n+1];
+    int final[n+1][n+1];
+
+    // prefix_sum[i] = prefix_sum[i-1] + arr[i] 1차원 배열
+    /*
+     1 2 3 4
+     2 3 4 5
+     3 4 5 6
+     4 5 6 7
+
+     2 2 3 4 (2,2) , (3,4) -> 27 3+4+5+4+5+6
+     3 4 3 4 -> 6
+     1 1 4 4 (1,1) , (4,4) -> 64
+
+     (3,4) (2,2)
+     prefix[i][j] = prefix[i-1][j] + prefix[i][j-1] 겹친 부분
+     - prefix[i-1][j-1] + arr[i][j]
+
+     (3,4)에서
+     */
+
+    // 누적합을 먼저 지정해야놓아야함. 시간초과 우엑
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= n; j++) {
+            cin >> arr[i][j];
+            final[i][j] = final[i-1][j] + final[i][j-1] - final[i-1][j-1] + arr[i][j];
+        }
+    }
+
+    // 3,4 합에서 - (1,4)랑 (3,1)빼고 두 번 뺴준 겹치는 부분 합친다
+    while(m--) {
+        cin >> x1 >> y1 >> x2 >> y2;
+        count = final[x2][y2] - final[x1-1][y2] - final[x2][y1-1] + final[x1-1][y1-1];
+        cout << count << "\n";
+    }
+}
