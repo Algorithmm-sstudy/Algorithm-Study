@@ -287,3 +287,29 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 기본 |  <a href="https://www.acmicpc.net/problem/2580">스도쿠</a> | <a href="">🔗</a> |
 
 <br>
+
+### Week 17 (25.08.15 ~ 25.08.22) 
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 기본 |  <a href="https://www.acmicpc.net/problem/9095">1, 2, 3 더하기</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/2193">이친수</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/14501">퇴사</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/2293">동전 1</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/9084">동전</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/5557">1학년</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/1932">정수 삼각형</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/11726">2xn 타일링</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/12865">평범한 배낭</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/17485">진우의 달 여행</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/4811">알약</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/11053">가장 긴 증가하는 부분 수열</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/1463">1로 만들기</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/10844">쉬운 계단 수</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/11052">카드 구매하기</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/1520">내리막 길</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/2294">동전 2</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/7579">앱</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/1328">고층 빌딩</a> | <a href="">🔗</a> |
+
+<br>
