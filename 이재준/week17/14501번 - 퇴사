@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    // 남은 N일동안 최대한 많은 상담
+    // 걸리는 기간 t, 금액 p
+
+    int n;
+    cin >> n;
+    int arr[15][2];
+    int dp[20] = {0,};
+
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i][0] >> arr[i][1]; // 기간, 금액
+    }
+
+    for(int j = 0; j < n; j++) {
+        if(j + arr[j][0] <= n) {
+            dp[j+arr[j][0]] = max(dp[j+arr[j][0]], dp[j] + arr[j][1]);
+        }
+        dp[j+1] = max(dp[j+1], dp[j]);
+    }
+    cout << dp[n] << "\n";
+}
