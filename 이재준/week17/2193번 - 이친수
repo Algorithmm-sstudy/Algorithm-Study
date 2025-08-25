@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+// 이친수는 0으로 시작하지 않는다.
+// 이친수에서는 1이 두 번 연속으로 나타나지 않는다.
+// 90자리이면 int의 범위를 넘어선다.
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    long n;
+    cin >> n;
+    long arr[n+1];
+    arr[1] = 1; arr[2] = 1;
+
+    for(int i = 3; i <= n; i++) {
+        arr[i] = arr[i-1] + arr[i-2];
+    }
+    cout << arr[n] << "\n";
+}
