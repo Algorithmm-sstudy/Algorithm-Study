@@ -315,3 +315,14 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 기본 |  <a href="https://www.acmicpc.net/problem/1328">고층 빌딩</a> | <a href="">🔗</a> |
 
 <br>
+
+### Week 18 (25.09.01 ~ 25.09.07)
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 배열 |  <a href="https://www.acmicpc.net/problem/1475">방 번호</a> | <a href="">🔗</a> |
+| 자료구조 |  <a href="https://www.acmicpc.net/problem/19638">센티와 마법의 뿅망치</a> | <a href="">🔗</a> |
+| 자료구조 |  <a href="https://www.acmicpc.net/problem/3986">좋은 단어</a> | <a href="">🔗</a> |
+| 자료구조 |  <a href="https://www.acmicpc.net/problem/17299">오등큰수</a> | <a href="">🔗</a> |
+
+<br>
