@@ -1,0 +1,42 @@
+#include<iostream>
+#include<map>
+#include<stack>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    stack<int> sta;
+
+    int n;
+    cin >> n;
+    int arr[n+1];
+    int ma[1000001];
+    int final[1000001] = {0,};
+
+    for(int i = 1; i <= n; i++) {
+        cin >> arr[i];
+        ma[arr[i]]++;
+    }
+
+    for(int j = n; j >= 1; j--) {
+        while(!sta.empty()) {
+            if(ma[sta.top()] > ma[arr[j]]) {
+                final[j] = sta.top();
+                break;
+            }
+            else{
+                sta.pop();
+            }
+        }
+        if(final[j] == 0) {
+            final[j] = -1;
+        }
+        sta.push(arr[j]);
+    }
+
+    for(int k = 1; k <= n; k++) {
+        cout << final[k] << " ";
+    }
+}
