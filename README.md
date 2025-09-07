@@ -326,3 +326,14 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 자료구조 |  <a href="https://www.acmicpc.net/problem/17299">오등큰수</a> | <a href="">🔗</a> |
 
 <br>
+
+### Week 19 (25.09.08 ~ 25.09.14)
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| DP |  <a href="https://www.acmicpc.net/problem/11727">2xn 타일링 2</a> | <a href="">🔗</a> |
+| 백트래킹 |  <a href="https://www.acmicpc.net/problem/15649">센티와 마법의 뿅망치</a> | <a href="">🔗</a> |
+| 완전탐색 |  <a href="https://www.acmicpc.net/problem/10819">차이를 최대로</a> | <a href="">🔗</a> |
+| 수학 |  <a href="https://www.acmicpc.net/problem/11047">동전 0</a> | <a href="">🔗</a> |
+
+<br>
