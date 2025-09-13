@@ -337,3 +337,14 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 수학 |  <a href="https://www.acmicpc.net/problem/11047">동전 0</a> | <a href="">🔗</a> |
 
 <br>
+
+### Week 20 (25.09.15 ~ 25.09.21)
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 수학 |  <a href="https://www.acmicpc.net/problem/11000">강의실 배정</a> | <a href="">🔗</a> |
+| 완전탐색 |  <a href="https://www.acmicpc.net/problem/18429">근손실</a> | <a href="">🔗</a> |
+| dp |  <a href="https://www.acmicpc.net/problem/9095">1,2,3 더하기</a> | <a href="">🔗</a> |
+| 자료구조 |  <a href="https://www.acmicpc.net/problem/25192">인사성 밝은 곰곰이</a> | <a href="">🔗</a> |
+
+<br>
