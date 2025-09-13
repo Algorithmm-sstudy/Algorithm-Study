@@ -1,0 +1,35 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+#include<cmath>
+using namespace std;
+
+int main() {
+    int N;
+    cin>>N;
+
+    vector<int> v;
+
+    for (int i=0;i<N;i++) {
+        int x;
+        cin>>x;
+        v.push_back(x);
+    }
+
+    sort(v.begin(),v.end()); //오름차순 정렬 next_permutation을 활용하기 위해서
+//next_permutaion은 algorithm 헤더에 들어있는 함수다. 순서대로 모든 순열을 사전순으로 생성한다.
+//현재 순열이 마지막 순열이면 false를 반환하고, 그 외에는 true를 반환.
+    int max=0;
+    do {
+        int sum=0;
+        for (int i=0;i<N-1;i++) {
+            sum+=abs(v[i]-v[i+1]);
+        }
+
+        if (sum>max) {
+            max=sum; //순열의 최대합 갱신
+        }
+    }while (next_permutation(v.begin(),v.end())); //마지막 순열 전까지 true
+
+    cout<<max<<"\n";
+}
