@@ -1,0 +1,38 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int N,K;
+bool visited[1000];
+vector<int> v;
+int final=0;
+
+void search(int count, int weight) {
+    if (count == N) { //3번 나오면 경우의 수 출력
+        final++;
+    }
+    else {
+        for (int i=0;i<N;i++) { //예를 들어 3 7 5 가 벡터에 있다고 생각
+            if (!visited[i]){ //사용되지 않은 중량 증가량일 때
+                int newWeight = weight - K + v[i]; 
+                if (newWeight >= 500) { //500 이상이면
+                    visited[i]=true; //체크 표시
+                    search(count+1, newWeight); 
+                    visited[i]=false;
+                }
+            }
+        }
+    }
+}
+
+    int main() {
+        cin>>N>>K;
+        for (int i=0;i<N;i++) {
+            int num;
+            cin>>num;
+            v.push_back(num);  //중량 증가량들을 입력 받는다.
+        }
+    search(0, 500); //N이 3까지이고 중량 500을 매개변수로 넘긴다.
+    cout<<final<<endl;
+    return 0;
+    }
