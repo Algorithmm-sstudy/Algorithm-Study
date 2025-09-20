@@ -1,0 +1,30 @@
+#include<iostream>
+#include<set>        //집합과 비슷한 자료구조이다.
+//중복을 허용하지 않고, 순서가 없다는 게 가장 큰 특징들이다.
+using namespace std;
+
+int main() {
+    int N;
+    cin>>N;
+
+    set<string> v;
+
+    string s;
+    int count=0;
+
+    for (int i = 0; i < N; i++) {
+        cin>>s;
+
+        if (s=="ENTER") { //ENTER 문자가 나온다면
+            count+=v.size(); //다음 ENTER가 나오기 전까지의 문자열들 더해주기
+            v.clear(); //ENTER가 입력되므로 다시 시작
+        }
+        else {
+            v.insert(s); //ENTER 전까지 set에 넣는다, 중복 허용이 되지 않아서
+            //삽입만 해도 된다.
+        }
+    }
+    count+=v.size(); //마지막 ENTER후에 입력 받은 문자열들 개수를 더해준다.
+    cout<<count<<endl;
+    return 0;
+}
