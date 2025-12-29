@@ -362,7 +362,6 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | Category | Title | Link |
 | :------: | :---: | :--: |
 | 기본 |  <a href="https://www.acmicpc.net/problem/10799">쇠막대기</a> | <a href="">🔗</a> |
-| 기본 |  <a href="https://www.acmicpc.net/problem/1406">에디터</a> | <a href="">🔗</a> |
 | 기본 |  <a href="https://www.acmicpc.net/problem/1158">요세푸스 문제</a> | <a href="">🔗</a> |
 | 기본 |  <a href="https://www.acmicpc.net/problem/13335">트럭</a> | <a href="">🔗</a> |
 | 기본 |  <a href="https://www.acmicpc.net/problem/12789">도키도키 간식드리미</a> | <a href="">🔗</a> |
