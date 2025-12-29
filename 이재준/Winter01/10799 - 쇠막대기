@@ -1,0 +1,31 @@
+#include<iostream>
+#include<stack>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    stack<int> bar;
+    int count = 0;
+
+    string s;
+    cin >> s;
+
+    for(int i = 0; i < s.length(); i++) {
+        if(s[i] == '(' && s[i+1] == ')') {
+            count += bar.size();
+            i++;
+        }
+        else if(s[i] == '(') {
+            bar.push(s[i]);
+        }
+        else if(s[i] == ')') {
+            bar.pop();
+            count += 1;
+        }
+    }
+
+    cout << count << "\n";
+}
