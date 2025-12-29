@@ -348,3 +348,22 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 | 자료구조 |  <a href="https://www.acmicpc.net/problem/25192">인사성 밝은 곰곰이</a> | <a href="">🔗</a> |
 
 <br>
+
+<hr>
+
+## 26-1 겨울방학
+
+### Week 01 (25.12.29 ~ 26.01.04)
+
+| Category | Title | Link |
+| :------: | :---: | :--: |
+| 기본 |  <a href="https://www.acmicpc.net/problem/10799">쇠막대기</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/1406">에디터</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/1158">요세푸스 문제</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/13335">트럭</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/12789">도키도키 간식드리미</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/17952">과제는 끝나지 않아!</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/25192">인사성 밝은 곰곰이</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/14713">앵무새</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/19638">센티와 마법의 뿅망치</a> | <a href="">🔗</a> |
+| 기본 |  <a href="https://www.acmicpc.net/problem/1764">듣보잡</a> | <a href="">🔗</a> |
