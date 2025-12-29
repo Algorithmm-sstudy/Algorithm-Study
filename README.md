@@ -357,7 +357,7 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 
 ## 26-1 겨울방학
 
-### Week 01 (25.12.29 ~ 26.01.04)
+### Winter 01 (25.12.29 ~ 26.01.04)
 
 | Category | Title | Link |
 | :------: | :---: | :--: |
