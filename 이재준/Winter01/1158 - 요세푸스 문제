@@ -1,0 +1,29 @@
+#include<iostream>
+#include<queue>
+using namespace std;
+
+int main() {
+    queue<int> table;
+    int person, K;
+    cin >> person >> K;
+
+    for(int i = 1; i <= person; i++) {
+        table.push(i);
+    }
+    
+    cout << "<";
+    while(table.size() != 0) {
+        int circle = K;
+        while(--circle) {
+            int t = table.front();
+            table.pop();
+            table.push(t);
+        }
+        if(table.size() == 1) {
+            cout << table.front() << ">";
+            return 0;
+        }
+        cout << table.front() << ", ";
+        table.pop();
+    }
+}
