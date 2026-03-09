@@ -1,0 +1,54 @@
+#include<iostream>
+using namespace std;
+
+int arr[130][130];
+int blue, white;
+
+void check(int x, int y, int len) {
+    bool cut = false;
+    int first = arr[x][y];
+
+    for (int i = x; i < x+len; i++) {
+        for (int j = y; j < y+len; j++) {
+            if (arr[i][j] != first) {
+                cut = true;
+                break;
+            }
+        }
+    }
+
+    if (cut) {
+        check(x, y, len / 2);
+        check(x, y + len / 2, len / 2);
+        check(x + len / 2, y, len / 2);
+        check(x + len / 2, y + len / 2, len / 2);
+    }
+    else {
+        if (first == 1) {
+            blue++;
+        }
+        else {
+            white++;
+        }
+    }
+}
+
+
+int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    int N;
+    cin >> N;
+
+    // 하얀색 0, 파란색 1
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            cin >> arr[i][j];
+        }
+    }
+
+    check(0, 0, N);
+    cout << white << "\n" << blue;
+}
