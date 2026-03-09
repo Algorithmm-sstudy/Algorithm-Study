@@ -1,9 +1,7 @@
 ## 🗓️ 스터디 운영 계획
-- 공통 문제 마감 시간 : 매 주 일요일 14시
+- 공통 문제 마감 시간 : 매 주 일요일 12시
 - 마감 시간 전까지 해당 주차 4문제을 풀이하여 개인 브랜치에 업로드하고, PR을 제출합니다. 
 - 각 카테고리에 맞게, 매주 4문제의 공통 문제가 주어집니다.
-    - 난이도는 Silver 4문제 입니다.
-    - 방학에는 Sliver Gold 총 20문제입니다. 
 - PR에 다른 사람의 풀이를 보고 적극적인 커멘트를 남겨주세요
 
 ## 🗓️ 파일구조는 다음예시처럼 해주세요 
@@ -355,18 +353,13 @@ https://github.com/tony9402/baekjoon &&  https://github.com/DKU-D-Coding/Algorit
 
 <hr>
 
-## 26-1 겨울방학
+## 26년 1학기
 
-### Winter 01 (25.12.29 ~ 26.01.04)
+### Week (26.03.09 ~ 26.03.15)
 
 | Category | Title | Link |
 | :------: | :---: | :--: |
-| 기본 |  <a href="https://www.acmicpc.net/problem/10799">쇠막대기</a> | <a href="">🔗</a> |
-| 기본 |  <a href="https://www.acmicpc.net/problem/1158">요세푸스 문제</a> | <a href="">🔗</a> |
-| 기본 |  <a href="https://www.acmicpc.net/problem/13335">트럭</a> | <a href="">🔗</a> |
-| 기본 |  <a href="https://www.acmicpc.net/problem/12789">도키도키 간식드리미</a> | <a href="">🔗</a> |
-| 기본 |  <a href="https://www.acmicpc.net/problem/17952">과제는 끝나지 않아!</a> | <a href="">🔗</a> |
-| 기본 |  <a href="https://www.acmicpc.net/problem/25192">인사성 밝은 곰곰이</a> | <a href="">🔗</a> |
-| 기본 |  <a href="https://www.acmicpc.net/problem/14713">앵무새</a> | <a href="">🔗</a> |
-| 기본 |  <a href="https://www.acmicpc.net/problem/19638">센티와 마법의 뿅망치</a> | <a href="">🔗</a> |
-| 기본 |  <a href="https://www.acmicpc.net/problem/1764">듣보잡</a> | <a href="">🔗</a> |
+| 분할정복 |  <a href="https://www.acmicpc.net/problem/2630">색종이</a> | <a href="">🔗</a> |
+| 그리디 |  <a href="https://www.acmicpc.net/problem/15903">카드 합체 놀이</a> | <a href="">🔗</a> |
+| dp |  <a href="https://www.acmicpc.net/problem/9095">1,2,3 더하기</a> | <a href="">🔗</a> |
+| SQL |  <a href="https://school.programmers.co.kr/learn/courses/30/lessons/59406">동물 수 구하기</a> | <a href="">🔗</a> |
